@@ -1,0 +1,7 @@
+$color-primary: module1.$color-primary;
+$color-secondary: module1.$color-secondary;
+$color-tertiary: module1.$color-tertiary;
+@function toRem($value) {
+    $remValue: ($value / 16) + rem;
+    @return $remValue;
+}

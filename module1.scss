@@ -1,0 +1,27 @@
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+@import "module3.scss";
+.exercise {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: toRem(1) solid $color-primary;
+    h1 {
+        color: $color-tertiary;
+        grid-column: 1/ span 4;
+        justify-self: center;
+        text-decoration: underline $color-secondary toRem(2);
+    }
+    h2 {
+        @extend h1;
+        padding: toRem(16);
+        border: toRem(1) solid red;
+        text-decoration: none;
+    }
+    section {
+        grid-column: 1 / 5;
+        display: flex;
+        margin: toRem(16);
+    }
+}

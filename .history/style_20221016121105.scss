@@ -1,0 +1,10 @@
+@use "module1.scss";
+@use "module2.scss";
+@import "module3.scss";
+
+.numbers {
+display: flex;
+& div {
+    border: toRem(1x solid
+}
+}

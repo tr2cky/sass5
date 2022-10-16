@@ -1,0 +1,155 @@
+.exercise {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 0.0625rem solid red;
+}
+.exercise h1, .exercise h2 {
+  color: green;
+  grid-column: 1/span 4;
+  justify-self: center;
+  text-decoration: underline blue 0.125rem;
+}
+.exercise h2 {
+  padding: 1rem;
+  border: 0.0625rem solid red;
+  text-decoration: none;
+}
+.exercise section {
+  grid-column: 1/5;
+  display: flex;
+  margin: 1rem;
+}
+
+section:nth-of-type(1) article:nth-of-type(odd) {
+  color: blue;
+  border: 0.0625rem solid;
+  border-color: green;
+  font-size: 1rem;
+}
+section:nth-of-type(1) article:nth-of-type(even) {
+  color: red;
+  border: 0.0625rem solid;
+  border-color: green;
+  font-size: 1rem;
+}
+
+section:nth-of-type(3) {
+  margin-top: 0rem;
+  place-self: center;
+}
+section:nth-of-type(3) article {
+  color: green;
+  border: 0.0625rem solid;
+  border-color: blue;
+  font-size: 1.5rem;
+}
+
+.numbers {
+  grid-area: 4/1/5/5;
+  display: flex;
+  justify-content: space-around;
+}
+.numbers div {
+  border: 0.0625rem solid red;
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+.numbers .fs-1rem {
+  font-size: 1rem;
+}
+.numbers .fs-2rem {
+  font-size: 2rem;
+}
+.numbers .fs-3rem {
+  font-size: 3rem;
+}
+.numbers .fs-2rem {
+  display: flex;
+  align-items: center;
+}
+.numbers .fs-3rem {
+  display: flex;
+  align-items: flex-end;
+}
+.numbers div:nth-child(1) {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+.numbers div:nth-child(2) {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+.numbers div:nth-child(3) {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+.numbers div:nth-child(4) {
+  background-color: #cccccc;
+  color: #333333;
+}
+.numbers div:nth-child(5) {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+.numbers div:nth-child(6) {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+.numbers div:nth-child(7) {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+.numbers div:nth-child(8) {
+  background-color: #999999;
+  color: #666666;
+}
+.numbers div:nth-child(9) {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+.numbers div:nth-child(10) {
+  background-color: gray;
+  color: gray;
+}
+.numbers div:nth-child(10) {
+  background-color: blue;
+  color: red;
+}
+.numbers div:nth-child(11) {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+.numbers div:nth-child(12) {
+  background-color: #666666;
+  color: #999999;
+}
+.numbers div:nth-child(13) {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+.numbers div:nth-child(14) {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+.numbers div:nth-child(15) {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+.numbers div:nth-child(16) {
+  background-color: #333333;
+  color: #cccccc;
+}
+.numbers div:nth-child(17) {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+.numbers div:nth-child(18) {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+.numbers div:nth-child(19) {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+
+/*# sourceMappingURL=style.css.map */

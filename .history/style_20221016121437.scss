@@ -1,0 +1,13 @@
+@use "module1.scss";
+@use "module2.scss";
+@import "module3.scss";
+
+.numbers {
+    grid-column: 1 / span 4;
+    display: flex;
+    justify-items: flex-end;
+
+    & div {
+        border: toRem(1) solid
+    }
+}

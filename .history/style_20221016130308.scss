@@ -1,0 +1,31 @@
+@use "module1.scss";
+@use "module2.scss";
+@import "module3.scss";
+$color-primary: module1.$color-primary;
+$color-secondary: module1.$color-secondary;
+$color-tertiary: module1.$color-tertiary;
+$sizes: 1rem, 2rem, 3rem;
+.numbers {
+    grid-area: 4 / 1 / 5 / 5;
+    display: flex;
+    justify-content: space-around;
+
+    & div {
+        border: toRem(1) solid $color-primary;
+        width: toRem(45);
+        height: toRem(45);
+    }
+    @each $size in $sizes {
+        & div {
+            font-size: $size * ;
+        }
+    }
+    & .fs-2rem {
+        display: flex;
+        align-items: center;
+    }
+    & .fs-3rem {
+        display: flex;
+        align-items: flex-end;
+    }
+}
